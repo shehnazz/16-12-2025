@@ -31,8 +31,8 @@ const TextReveal = ({ text, className = '', delay = 0, stagger = 0.05, mode = 'w
             y: 20,
             transition: {
                 type: "spring",
-                damping: 12,
-                stiffness: 100,
+                damping: 20,
+                stiffness: 90,
             }
         },
         visible: {
@@ -40,8 +40,8 @@ const TextReveal = ({ text, className = '', delay = 0, stagger = 0.05, mode = 'w
             y: 0,
             transition: {
                 type: "spring",
-                damping: 12,
-                stiffness: 100,
+                damping: 20,
+                stiffness: 90,
             }
         }
     };

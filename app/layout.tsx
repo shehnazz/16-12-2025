@@ -7,8 +7,11 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
 };
+
+
+
 import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import SmoothScroll from '@/components/ui/SmoothScroll';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -49,11 +52,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} ${playfair.variable} ${outfit.variable} flex flex-col min-h-screen`}>
-
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+      <body className={`${outfit.className} ${playfair.variable} ${outfit.variable} flex flex-col min-h-screen antialiased selection:bg-signature-purple selection:text-white`}>
+        <SmoothScroll>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+        </SmoothScroll>
       </body>
     </html>
   );

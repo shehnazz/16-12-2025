@@ -40,8 +40,8 @@ const FadeIn = React.forwardRef<HTMLDivElement, FadeInProps>(({
             y: 0,
             x: 0,
             transition: {
-                duration: duration,
-                ease: "easeInOut",
+                duration: 0.9,
+                ease: [0.21, 0.47, 0.32, 0.98],
                 delay: delay / 1000,
                 staggerChildren: 0.1
             } as any

@@ -72,9 +72,9 @@ const config: Config = {
         subtext: {
           DEFAULT: '#6B7280', // Blue-gray for subtext
         },
-        gold: {
-          DEFAULT: '#D4AF37', // Subtle gold accent
-        },
+        // gold: {
+        //   DEFAULT: '#6A4C93', // Subtle gold accent
+        // },
       },
       keyframes: {
         'accordion-down': {
